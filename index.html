@@ -16,7 +16,6 @@
             color: #333;
         }
 
-       
         .navbar {
             position: fixed;
             top: 0;
@@ -28,7 +27,7 @@
             background: white;
             border-bottom: 2px solid #333;
             box-sizing: border-box;
-            z-index: 1000; /* Agar tetap di atas konten lain */
+            z-index: 1000;
         }
 
         .logo {
@@ -64,6 +63,12 @@
             border-radius: 15px;
             box-shadow: 10px 10px 0px #bebece;
             border: 2px solid #333;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 15px 15px 0px #6200ea;
         }
 
         h1 {
@@ -74,6 +79,14 @@
             background: linear-gradient(45deg, #6200ea, #03dac6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            background: linear-gradient(45deg, #03dac6, #6200ea);
+            -webkit-background-clip: text;
+            filter: drop-shadow(0px 0px 8px rgba(98, 0, 234, 0.3));
+            cursor: pointer;
         }
 
         p {
@@ -81,6 +94,7 @@
             color: #666;
             font-weight: 500;
         }
+
         .footer {
             position: fixed;
             bottom: 0;
@@ -111,7 +125,8 @@
     <div class="container">
         <h1>Marvelous Alarri Gad Learsi</h1>
         <p>Praktikum Git & GitHub</p>
-    </div> 
+    </div>
+
     <footer class="footer">
         <p>&copy; 2026 Marvelous Alarri. Created for Database Systems Practice.</p>
     </footer>
