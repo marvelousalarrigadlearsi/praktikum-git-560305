@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Github</title>
     <style>
-        /* Menggunakan font sistem yang bersih */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f5;
@@ -17,12 +16,53 @@
             color: #333;
         }
 
+        /* Perbaikan: Tambahkan titik (.) sebelum nama class */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background: white;
+            border-bottom: 2px solid #333;
+            box-sizing: border-box;
+            z-index: 1000; /* Agar tetap di atas konten lain */
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #6200ea;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #03dac6;
+        }
+
         .container {
             text-align: center;
             background: white;
             padding: 2rem 3rem;
             border-radius: 15px;
-            box-shadow: 10px 10px 0px #bebece; /* Efek shadow kaku khas desain retro */
+            box-shadow: 10px 10px 0px #bebece;
             border: 2px solid #333;
         }
 
@@ -44,9 +84,18 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">GIT-LAB</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <h1>Marvelous Alarri Gad Learsi</h1>
         <p>Praktikum Git & GitHub</p>
-    </div>
+    </div> 
 </body>
 </html>
