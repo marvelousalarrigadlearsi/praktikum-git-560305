@@ -9,19 +9,13 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f0f5;
             display: flex;
+            flex-direction: column; 
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             color: #333;
         }
-
-        .logo {
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #6200ea;
-        }
-
 
         .container {
             text-align: center;
@@ -31,6 +25,7 @@
             box-shadow: 10px 10px 0px #bebece;
             border: 2px solid #333;
             transition: all 0.3s ease-in-out;
+            margin-bottom: 20px; /* Jarak ke footer */
         }
 
         .container:hover {
@@ -62,13 +57,36 @@
             font-weight: 500;
         }
 
+        /* Styling Footer */
+        footer {
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        .footer-bold {
+            font-weight: bold;
+            color: #6200ea;
+        }
+
     </style>
 </head>
 <body>
 
-    <di class="container">
+    <div class="container">
         <h1>Marvelous Alarri Gad Learsi</h1>
         <p>Praktikum Git & GitHub</p>
-    </di
+        <p>coba branch 1</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span class="footer-bold">Laporan Praktikum</span>
+    </footer>
+
 </body>
 </html>
