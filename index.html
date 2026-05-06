@@ -3,73 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar Github</title>
+    <title>Progres 1 - Sticky Navbar</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ff0099;
+            margin: 0;
+            padding-top: 80px; /* Ruang agar konten tidak tertutup navbar */
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #00bbff;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            margin: 0;
-            color: #333;
+            min-height: 100vh;
         }
-
-        .logo {
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #6200ea;
-        }
-
-
-        .container {
-            text-align: center;
+        /* Navbar Sticky */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 65px;
             background: white;
-            padding: 2rem 3rem;
-            border-radius: 15px;
-            box-shadow: 10px 10px 0px #bebece;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .nav-logo { font-weight: 800; color: #6200ea; }
+        .container {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
             border: 2px solid #333;
-            transition: all 0.3s ease-in-out;
+            text-align: center;
         }
-
-        .container:hover {
-            transform: translateY(-5px);
-            box-shadow: 15px 15px 0px #6200ea;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background: linear-gradient(45deg, #6200ea, #03dac6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            transition: all 0.3s ease-in-out;
-        }
-
-        h1:hover {
-            background: linear-gradient(45deg, #03dac6, #6200ea);
-            -webkit-background-clip: text;
-            filter: drop-shadow(0px 0px 8px rgba(98, 0, 234, 0.3));
-            cursor: pointer;
-        }
-
-        p {
-            margin-top: 10px;
-            color: #666;
-            font-weight: 500;
-        }
-
     </style>
 </head>
 <body>
+    <nav>
+        <div class="nav-logo">LAB-TI</div>
+        <div style="display: flex; gap: 15px;"><span>Home</span><span>Praktikum</span></div>
+    </nav>
 
     <div class="container">
         <h1>Marvelous Alarri Gad Learsi</h1>
         <p>Praktikum Git & GitHub</p>
     </div>
-
 </body>
 </html>
