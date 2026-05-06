@@ -49,3 +49,9 @@ node_modules/ lalu melakukan commit dengan perintah git commit-m "chore: add .gi
 ![fix conflict](gambar13.png)
 ![fix conflict](gambar14.png)
 ![fix conflict](gambar15.png)
+
+
+## Langkah langkah 4
+dimulai dengan mengatur Issues di GitHub, dengan membuat Issues . Setiap issue diberikan judul yang spesifik, seperti rencana implementasi fitur atau laporan bug, serta deskripsi singkat mengenai tugas yang akan diselesaikan agar terdokumentasi dengan jelas sebagai nomor #1, #2, dan #3. Setelah perencanaan selesai, tahap kedua adalah pengerjaan teknis melalui Branching, di mana dilakukan dengan berpindah dari branch utama ke cabang baru menggunakan perintah git checkout -b [nama-branch] untuk mulai memodifikasi kode. Proses ini mencakup penambahan elemen desain seperti Sticky Navbar atau Footer yang kemudian disimpan dan diunggah ke GitHub menggunakan rangkaian perintah git add, git commit, dan git push.
+
+Tahap ketiga merupakan inti dari integrasi, yaitu penutupan issue secara otomatis melalui Pull Request (PR). Saat membuat PR di halaman GitHub, cantumkan kata kunci Closes # diikuti dengan nomor issue terkait (misalnya Closes #1) di dalam kolom deskripsi. Penggunaan kata kunci ini sangat krusial karena berfungsi sebagai pemicu otomatisasi yang akan mengubah status issue tersebut dari Open menjadi Closed tepat setelah proses penggabungan kode atau merge disetujui. 
